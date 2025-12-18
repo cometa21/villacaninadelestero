@@ -100,7 +100,7 @@ const Boarding = () => {
                     Descuentos especiales para estancias prolongadas.
                   </p>
                   <a
-                    href="https://wa.me/526461243859?text=Hola,%20me%20interesa%20el%20hospedaje%20canino"
+                    href="https://wa.me/526461423859?text=Hola,%20me%20interesa%20el%20hospedaje%20canino"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

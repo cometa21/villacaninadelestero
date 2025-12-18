@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="https://wa.me/526461243859"
+              href="https://wa.me/526461423859"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -75,7 +75,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="https://wa.me/526461243859"
+                href="https://wa.me/526461423859"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2"

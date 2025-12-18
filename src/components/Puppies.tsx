@@ -89,7 +89,7 @@ const Puppies = () => {
                   y programar una visita.
                 </p>
                 <a
-                  href="https://wa.me/526461243859?text=Hola,%20me%20interesa%20información%20sobre%20cachorros%20disponibles"
+                  href="https://wa.me/526461423859?text=Hola,%20me%20interesa%20información%20sobre%20cachorros%20disponibles"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
