@@ -93,7 +93,7 @@ const Services = () => {
                 </ul>
                 
                 <a
-                  href="https://wa.me/526461243859?text=Hola,%20me%20interesa%20el%20servicio%20de%20" 
+                  href="https://wa.me/526461423859?text=Hola,%20me%20interesa%20el%20servicio%20de%20" 
                   target="_blank"
                   rel="noopener noreferrer"
                 >

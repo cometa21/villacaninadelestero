@@ -68,7 +68,7 @@ const Footer = () => {
                   className="flex items-center gap-3 text-background/70 hover:text-background transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  +52 646-124-3859
+                  +52 646-142-3859
                 </a>
               </li>
               <li>
