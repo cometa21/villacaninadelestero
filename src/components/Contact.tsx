@@ -65,7 +65,7 @@ const Contact = () => {
       `Hola, me gustaría más información.\n\nNombre: ${name}\nEmail: ${email}\nTeléfono: ${phone || "No proporcionado"}\n\nMensaje: ${message}`
     );
     
-    window.open(`https://wa.me/526461243859?text=${whatsappMessage}`, "_blank");
+    window.open(`https://wa.me/526461423859?text=${whatsappMessage}`, "_blank");
     
     toast({
       title: "¡Mensaje enviado!",
