@@ -1,13 +1,40 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Boarding from "@/components/Boarding";
+import Puppies from "@/components/Puppies";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>Villa Canina del Estero | Adiestramiento y Hospedaje Canino en Ensenada</title>
+        <meta
+          name="description"
+          content="Adiestramiento canino profesional, hospedaje seguro y venta de cachorros en Ensenada, B.C. México. Servicios para clientes de México y Estados Unidos."
+        />
+        <meta
+          name="keywords"
+          content="adiestramiento canino, hospedaje canino, cachorros, Ensenada, Baja California, entrenamiento de perros, hotel para perros"
+        />
+        <link rel="canonical" href="https://villacaninadelestero.mx" />
+      </Helmet>
+      
+      <main className="min-h-screen">
+        <Navbar />
+        <Hero />
+        <Services />
+        <Boarding />
+        <Puppies />
+        <About />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 };
 
