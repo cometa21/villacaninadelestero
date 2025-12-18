@@ -18,8 +18,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Teléfono / WhatsApp",
-    value: "+52 646-124-3859",
-    link: "tel:+526461243859",
+    value: "+52 646-142-3859",
+    link: "tel:+526461423859",
   },
   {
     icon: MessageCircle,
