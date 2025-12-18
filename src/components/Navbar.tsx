@@ -10,6 +10,7 @@ const Navbar = () => {
     { name: "Inicio", href: "#inicio" },
     { name: "Servicios", href: "#servicios" },
     { name: "Hospedaje", href: "#hospedaje" },
+    { name: "Reservar", href: "#reservar" },
     { name: "Cachorros", href: "#cachorros" },
     { name: "Nosotros", href: "#nosotros" },
     { name: "Contacto", href: "#contacto" },

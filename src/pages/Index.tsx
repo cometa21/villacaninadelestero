@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Boarding from "@/components/Boarding";
+import BookingCalendar from "@/components/BookingCalendar";
 import Puppies from "@/components/Puppies";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
@@ -29,6 +30,7 @@ const Index = () => {
         <Hero />
         <Services />
         <Boarding />
+        <BookingCalendar />
         <Puppies />
         <About />
         <Contact />
