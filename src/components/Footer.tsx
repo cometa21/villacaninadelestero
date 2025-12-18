@@ -64,7 +64,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:+526461243859"
+                  href="tel:+526461423859"
                   className="flex items-center gap-3 text-background/70 hover:text-background transition-colors"
                 >
                   <Phone className="w-5 h-5" />
@@ -73,7 +73,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/526461243859"
+                  href="https://wa.me/526461423859"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-lg text-accent-foreground font-semibold hover:bg-accent/90 transition-colors"
