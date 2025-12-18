@@ -1,10 +1,18 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, MessageCircle, Send } from "lucide-react";
+import { Phone, MapPin, MessageCircle, Send } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  name: z.string().min(1, "El nombre es requerido").max(100, "El nombre es muy largo"),
+  email: z.string().email("Email inválido").max(100, "El email es muy largo"),
+  phone: z.string().max(20, "El teléfono es muy largo").optional().or(z.literal("")),
+  message: z.string().min(1, "El mensaje es requerido").max(1000, "El mensaje es muy largo"),
+});
 
 const contactInfo = [
   {
@@ -39,9 +47,22 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create WhatsApp message with form data
+    const validated = contactSchema.safeParse(formData);
+    if (!validated.success) {
+      const firstError = validated.error.errors[0];
+      toast({
+        title: "Error de validación",
+        description: firstError.message,
+        variant: "destructive",
+      });
+      return;
+    }
+
+    const { name, email, phone, message } = validated.data;
+    
+    // Create WhatsApp message with validated form data
     const whatsappMessage = encodeURIComponent(
-      `Hola, me gustaría más información.\n\nNombre: ${formData.name}\nEmail: ${formData.email}\nTeléfono: ${formData.phone}\n\nMensaje: ${formData.message}`
+      `Hola, me gustaría más información.\n\nNombre: ${name}\nEmail: ${email}\nTeléfono: ${phone || "No proporcionado"}\n\nMensaje: ${message}`
     );
     
     window.open(`https://wa.me/526461243859?text=${whatsappMessage}`, "_blank");
