@@ -25,7 +25,7 @@ const contactInfo = [
     icon: MessageCircle,
     title: "WhatsApp Directo",
     value: "Enviar mensaje",
-    link: "https://wa.me/526461243859",
+    link: "https://wa.me/526461423859",
   },
   {
     icon: MapPin,
